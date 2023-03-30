@@ -5,7 +5,7 @@
  *
  * http://glpi-project.org
  *
- * @copyright 2015-2023 Teclib' and contributors.
+ * @copyright 2015-2022 Teclib' and contributors.
  * @copyright 2003-2014 by the INDEPNET Development Team.
  * @licence   https://www.gnu.org/licenses/gpl-3.0.html
  *
@@ -75,8 +75,8 @@ $timeline-badge-bg: rgba(97, 97, 97, 15%) !default;
 $timeline-badge-fg: rgba(43, 43, 43, 80%) !default;
 $input-border: $dark-mode-text !default;
 $dropdowns-list-contrast: rgba(167, 171, 175, 10%) !default;
-$glpi-badge-bg: theme-color-lighter($link-color, true) !default;
-$glpi-badge-fg: $link-color !default;
+$entity-badge-bg: theme-color-lighter($link-color, true) !default;
+$entity-badge-fg: $link-color !default;
 
 // helpers
 $topbar-height: 79px;
@@ -247,13 +247,13 @@ table {
     }
 }
 
-.glpi-badge {
+.entity-badge {
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background: $glpi-badge-bg;
-    color: $glpi-badge-fg !important;
+    background: $entity-badge-bg;
+    color: $entity-badge-fg !important;
     padding: calc(0.25rem - 1px) 0.25rem;
     border: 1px solid transparent;
     border-radius: 4px;
@@ -317,18 +317,4 @@ table {
 
 kbd {
     white-space: nowrap;
-}
-
-body,
-body input {
-    font-variant-ligatures: no-contextual;
-}
-
-/** Bootstrap visibility classes (The utility class behavior is different in _styles.scss) */
-.bs-visible {
-    visibility: visible !important;
-}
-
-.bs-invisible {
-    visibility: hidden !important;
 }

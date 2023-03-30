@@ -5,7 +5,7 @@
  *
  * http://glpi-project.org
  *
- * @copyright 2015-2023 Teclib' and contributors.
+ * @copyright 2015-2022 Teclib' and contributors.
  * @copyright 2003-2014 by the INDEPNET Development Team.
  * @licence   https://www.gnu.org/licenses/gpl-3.0.html
  *
@@ -39,7 +39,7 @@
 .topbar {
     background-color: $mainmenu-bg;
     color: $mainmenu-fg;
-    z-index: $zindex-fixed + 1; // +1 to be above breadcrumbs
+    z-index: $zindex-fixed;
 
     .btn-ghost-secondary {
         color: rgba($color: $mainmenu-fg, $alpha: 80%);
@@ -62,14 +62,6 @@
         i {
             margin-right: 0.3em;
         }
-    }
-}
-
-.navbar-vertical {
-    .trigger-fuzzy {
-        border: 0;
-        font-size: 1em;
-        font-weight: 400;
     }
 }
 
@@ -157,11 +149,8 @@
     }
 
     body.navbar-collapsed {
-        #navbar-menu .nav-link {
-            padding: 0.58rem 1.5rem !important;
-        }
-
         .navbar-brand {
+            padding: 0.4rem !important;
             margin: 0 calc(-1 * var(--tblr-gutter-x, 1.5rem)) 0.5rem;
             width: calc(100% + var(--tblr-gutter-x, 1.5rem) * 2);
 
@@ -242,7 +231,7 @@
                                 border-left: 3px solid transparent;
 
                                 &.active {
-                                    background-color: lighten($mainmenu-bg, 55%);
+                                    background-color: lighten($mainmenu-bg, 5%);
                                     border-left-color: $primary;
                                 }
                             }

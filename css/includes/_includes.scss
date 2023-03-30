@@ -5,7 +5,7 @@
  *
  * http://glpi-project.org
  *
- * @copyright 2015-2023 Teclib' and contributors.
+ * @copyright 2015-2022 Teclib' and contributors.
  * @copyright 2003-2014 by the INDEPNET Development Team.
  * @licence   https://www.gnu.org/licenses/gpl-3.0.html
  *
@@ -66,7 +66,6 @@ $is-dark: false !default;
 @import "components/itilobject/dates_timelines";
 @import "components/itilobject/status";
 @import "components/setup/dropdowns_list";
-@import "components/chartist/chartist";
 @import "pages/search";
 @import "../legacy/includes/inputs";
 @import "../legacy/includes/styles";
